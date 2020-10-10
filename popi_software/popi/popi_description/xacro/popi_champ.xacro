@@ -507,8 +507,8 @@
 	    <parent link="EpauleAVD" />
 	    <child  link="HJambeAVD" />
 	    <axis   xyz="0 -1 0" />
-	    <limit  lower="${lower_epaule}"
-      			upper="${upper_epaule}"
+	    <limit  lower="-1.5708"
+      			upper="1.5708"
       			effort="${effort_epaule}"
       			velocity="${vel_epaule}" />
 	    <dynamics damping="${damping_epaule}" 
@@ -521,8 +521,8 @@
 	    <parent link="HJambeAVD" />
 	    <child  link="BJambeAVD" />
 	    <axis   xyz="0 1 0" />
-	    <limit  lower="${lower_coude}"
-      			upper="${upper_coude}"
+	    <limit  lower="-0.26"
+      			upper="1.92"
       			effort="${effort_coude}"
       			velocity="${vel_coude}" />
 	    <dynamics damping="${damping_coude}" 
@@ -561,8 +561,8 @@
 	    <parent link="EpauleAVG" />
 	    <child  link="HJambeAVG" />
 	    <axis   xyz="0 -1 0" />
-	    <limit  lower="${lower_epaule}"
-      			upper="${upper_epaule}"
+	    <limit  lower="-1.5708"
+      			upper="1.5708"
       			effort="${effort_epaule}"
       			velocity="${vel_epaule}" />
 	    <dynamics damping="${damping_epaule}" 
@@ -575,8 +575,8 @@
 	    <parent link="HJambeAVG" />
 	    <child  link="BJambeAVG" />
 	    <axis   xyz="0 1 0" />
-	    <limit  lower="${lower_coude}"
-      			upper="${upper_coude}"
+	    <limit  lower="-0.26"
+      			upper="1.92"
       			effort="${effort_coude}"
       			velocity="${vel_coude}" />
 	    <dynamics damping="${damping_coude}" 
@@ -614,8 +614,8 @@
 	    <parent link="EpauleARD" />
 	    <child  link="HJambeARD" />
 	    <axis   xyz="0 -1 0" />
-	    <limit  lower="${lower_epaule}"
-      			upper="${upper_epaule}"
+	    <limit  lower="-1.5708"
+      			upper="1.5708"
       			effort="${effort_epaule}"
       			velocity="${vel_epaule}" />
 	    <dynamics damping="${damping_epaule}" 
@@ -627,8 +627,8 @@
 	    <parent link="HJambeARD" />
 	    <child  link="BJambeARD" />
 	    <axis   xyz="0 1 0" />
-	    <limit  lower="${lower_coude}"
-      			upper="${upper_coude}"
+	    <limit  lower="-0.26"
+      			upper="1.92"
       			effort="${effort_coude}"
       			velocity="${vel_coude}" />
 	    <dynamics damping="${damping_coude}" 
@@ -666,8 +666,8 @@
 	    <parent link="EpauleARG" />
 	    <child  link="HJambeARG" />
 	    <axis   xyz="0 -1 0" />
-	    <limit  lower="${lower_epaule}"
-      			upper="${upper_epaule}"
+	    <limit  lower="-1.5708"
+      			upper="1.5708"
       			effort="${effort_epaule}"
       			velocity="${vel_epaule}" />
 	    <dynamics damping="${damping_epaule}" 
@@ -679,8 +679,8 @@
 		<parent link="HJambeARG" />
 		<child  link="BJambeARG" />
 		<axis   xyz="0 1 0" />
-		<limit  lower="${lower_coude}"
-      			upper="${upper_coude}"
+		<limit  lower="-0.26"
+      			upper="1.92"
       			effort="${effort_coude}"
       			velocity="${vel_coude}" />
 		<dynamics damping="${damping_coude}" 

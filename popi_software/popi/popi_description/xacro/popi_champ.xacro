@@ -700,8 +700,7 @@
 <!--**************************************************************************************-->	
   	<gazebo>
     	<plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-      		<robotNamespace>/popi</robotNamespace>
-      		<robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+            <legacyModeNS>true</legacyModeNS>
     	</plugin>
   	</gazebo>
 
@@ -716,6 +715,7 @@
     	</joint>
     	<actuator name="aileAVD_moteur">
       		<mechanicalReduction>1</mechanicalReduction>
+      		<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     	</actuator>
   	</transmission>
 
@@ -726,6 +726,7 @@
     	</joint>
     	<actuator name="epauleAVD_moteur">
       		<mechanicalReduction>1</mechanicalReduction>
+      		<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     	</actuator>
   	</transmission>
 
@@ -736,6 +737,7 @@
     	</joint>
     	<actuator name="coudeAVD_moteur">
       		<mechanicalReduction>1</mechanicalReduction>
+      		<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     	</actuator>
   	</transmission>
 
@@ -750,6 +752,7 @@
     	</joint>
     	<actuator name="aileAVG_moteur">
       		<mechanicalReduction>1</mechanicalReduction>
+      		<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     	</actuator>
   	</transmission>
 
@@ -760,6 +763,7 @@
     	</joint>
     	<actuator name="epauleAVG_moteur">
       		<mechanicalReduction>1</mechanicalReduction>
+      		<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     	</actuator>
   	</transmission>
 
@@ -770,6 +774,7 @@
     	</joint>
     	<actuator name="coudeAVG_moteur">
       		<mechanicalReduction>1</mechanicalReduction>
+      		<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     	</actuator>
   	</transmission>
 
@@ -784,6 +789,7 @@
     	</joint>
     	<actuator name="aileARD_moteur">
       		<mechanicalReduction>1</mechanicalReduction>
+      		<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     	</actuator>
   	</transmission>
 
@@ -794,6 +800,7 @@
     	</joint>
     	<actuator name="epauleARD_moteur">
       		<mechanicalReduction>1</mechanicalReduction>
+      		<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     	</actuator>
   	</transmission>
 
@@ -804,6 +811,7 @@
     	</joint>
     	<actuator name="coudeARD_moteur">
       		<mechanicalReduction>1</mechanicalReduction>
+      		<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     	</actuator>
   	</transmission>
 
@@ -818,6 +826,7 @@
     	</joint>
     	<actuator name="aileARG_moteur">
       		<mechanicalReduction>1</mechanicalReduction>
+      		<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     	</actuator>
   	</transmission>
 
@@ -828,6 +837,7 @@
     	</joint>
     	<actuator name="epauleARG_moteur">
       		<mechanicalReduction>1</mechanicalReduction>
+      		<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     	</actuator>
   	</transmission>
 
@@ -838,6 +848,7 @@
     	</joint>
     	<actuator name="coudeARG_moteur">
       		<mechanicalReduction>1</mechanicalReduction>
+      		<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     	</actuator>
   	</transmission>
 

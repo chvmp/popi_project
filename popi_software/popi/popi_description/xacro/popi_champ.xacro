@@ -44,10 +44,10 @@
 		    <material name="grey"/>
 	    </visual>
 	    <collision>
-	      	<origin xyz="0 0 0"
+	      	<origin xyz="0 0 -0.035"
 	        	  	rpy="0 0 0" />
 	      	<geometry>
-	        	<mesh filename="package://popi_description/meshes/Bati.STL" />
+          		<box size="0.84 0.4 0.2" />
 	      	</geometry>
 	    </collision>
   	</link>
@@ -74,18 +74,18 @@
 	      	<material name="orange"/>
     	</visual>
     	<collision>
-      		<origin xyz="0 0 0"
+      		<origin xyz="0 0.075 0"
         			rpy="0 0 0" />
       		<geometry>
-        		<mesh filename="package://popi_description/meshes/EpauleAVD.STL" />
+          		<box size="0.15 0.15 0.12" />
       		</geometry>
     	</collision>
   	</link>
   	
   	<link name="HJambeAVD">
     	<inertial>
-     		<origin xyz="-0.11331 0.00512 0.01743"
-        			rpy="0 -1.5708 0" />
+     		<origin xyz="0.01743 0.00512 -0.11331"
+        			rpy="0 0 0" />
       		<mass value="${masse_hjambe}" />
       		<inertia 	ixx="0.00899" 	ixy="0.00215" 	ixz="0.00647"
         								iyy="0.0605"    iyz="-0.00043"
@@ -100,18 +100,18 @@
       		<material name="darkgrey"/>
     	</visual>
     	<collision>
-      		<origin xyz="0 0 0"
+      		<origin xyz="0 0 -0.15"
         			rpy="0 0 0" />
       		<geometry> 
-        		<mesh filename="package://popi_description/meshes/HJambeAVD.STL" />
+          		<box size="0.1 0.1 -0.43" />
       		</geometry>
     	</collision>
   	</link>
   	
   	<link name="BJambeAVD">
     	<inertial>
-      		<origin xyz="0.11761 0 -0.012387"
-        			rpy="0 1.5708 0" />
+      		<origin xyz="-0.012387 0 -0.11761"
+        			rpy="0 0 0" />
       		<mass value="${masse_bjambe}" />
       		<inertia 	ixx="0.000103" 	ixy="0.000000" 	ixz="-0.00019" 	
       									iyy="0.006798" 	iyz="0"
@@ -126,10 +126,10 @@
       		<material name="white"/>
     	</visual>
     	<collision>
-      		<origin xyz="0 0 0"
+      		<origin xyz="0 0 -0.08"
         			rpy="0 0 0" />
       		<geometry> 
-        		<mesh filename="package://popi_description/meshes/BJambeAVD.STL" />
+          		<box size="0.05 0.05 -0.32" />
       		</geometry>
     	</collision>
   	</link>
@@ -152,10 +152,10 @@
       		<material name="white"/>
     	</visual>
     	<collision>
-      		<origin xyz="0 0 0"
+      		<origin xyz="0 0 0.033"
         	  		rpy="0 0 0" />
       		<geometry>
-        		<mesh filename="package://popi_description/meshes/PiedAVD.STL" />
+        		<sphere radius="0.0335" />
       		</geometry>
     	</collision>
   	</link>
@@ -182,17 +182,17 @@
       		<material name="orange"/>
     	</visual>
     	<collision>
-      		<origin xyz="0 0 0"
+      		<origin xyz="0 -0.075 0"
         			rpy="0 0 0" />
       		<geometry>
-        		<mesh filename="package://popi_description/meshes/EpauleAVG.STL" />
+          		<box size="0.15 0.15 0.12" />
       		</geometry>
     	</collision>
   	</link>
 	
 	<link name="HJambeAVG">
 	    <inertial>
-	      	<origin xyz="-0.11389 -0.00555 0.00901"
+	      	<origin xyz="0.00901 -0.00555 -0.11389"
 	        		rpy="0 -1.495 0" />
 	      	<mass value="${masse_hjambe}" />
 	      	<inertia 	ixx="0.01032" 	ixy="-0.00226" 	ixz="0.01011"
@@ -207,19 +207,19 @@
 	      	</geometry>
 	      	<material name="darkgrey"/>
 	    </visual>
-	    <collision>
-	      	<origin xyz="0 0 0"
-	        		rpy="0 0 0" />
-	      		<geometry>
-	        		<mesh filename="package://popi_description/meshes/HJambeAVG.STL" />
-	      		</geometry>
-	    </collision>
+    	<collision>
+      		<origin xyz="0 0 -0.15"
+        			rpy="0 0 0" />
+      		<geometry> 
+          		<box size="0.1 0.1 -0.43" />
+      		</geometry>
+    	</collision>
 	</link>
 	
 	<link name="BJambeAVG">
 	    <inertial>
-	      	<origin xyz="0.11761 0 -0.012387"
-	        		rpy="0 1.5708 0" />
+	      	<origin xyz="-0.012387 0 -0.11761"
+	        		rpy="0 0 0" />
 	      	<mass value="${masse_bjambe}" />
 	      	<inertia 	ixx="0.000103" 	ixy="0.000000" 	ixz="-0.00019" 	
       									iyy="0.006798" 	iyz="0"
@@ -233,13 +233,13 @@
 	      	</geometry>
 	      	<material name="white"/>
 	    </visual>
-	    <collision>
-	      	<origin xyz="0 0 0"
-        		  	rpy="0 0 0" />
-	      	<geometry>
-	        	<mesh filename="package://popi_description/meshes/BJambeAVG.STL" />
-	      	</geometry>
-	    </collision>
+    	<collision>
+      		<origin xyz="0 0 -0.08"
+        			rpy="0 0 0" />
+      		<geometry> 
+          		<box size="0.05 0.05 -0.32" />
+      		</geometry>
+    	</collision>
 	</link>
 
 	<link name="PiedAVG">
@@ -260,11 +260,11 @@
 	      	<material name="white"/>
 	    </visual>
 	    <collision>
-	      	<origin xyz="0 0 0"
-	        	  	rpy="0 0 0" />
-	      	<geometry>
-	        	<mesh filename="package://popi_description/meshes/PiedAVG.STL" />
-	      	</geometry>
+      		<origin xyz="0 0 0.033"
+        	  		rpy="0 0 0" />
+      		<geometry>
+        		<sphere radius="0.0335" />
+      		</geometry>
     	</collision>
   	</link>
 
@@ -289,18 +289,18 @@
 	      	<material name="orange"/>
 	    </visual>
 	    <collision>
-	      	<origin xyz="0 0 0"
+	      	<origin xyz="0 0.075 0"
 	        		rpy="0 0 0" />
 	        <geometry>
-	        	<mesh filename="package://popi_description/meshes/EpauleARD.STL" />
+          		<box size="0.15 0.15 0.12" />
 	      	</geometry>
 	    </collision>
 	</link>
 
 	<link name="HJambeARD">
 	    <inertial>
-	     	<origin xyz="-0.11331 0.00512 0.01743"
-	        		rpy="0 -1.5708 0" /> 
+	     	<origin xyz="0.01743 0.00512 -0.11331"
+	        		rpy="0 0 0" /> 
 	      	<mass value="${masse_hjambe}" />
 	      	<inertia 	ixx="0.00899" 	ixy="0.00215" 	ixz="0.00647"
 	        							iyy="0.0605"  	iyz="-0.00043"
@@ -314,19 +314,19 @@
 	      	</geometry>
 	      	<material name="darkgrey"/>
 	    </visual>
-	    <collision>
-	      	<origin xyz="0 0 0"
-	        		rpy="0 0 0" />
-	      	<geometry>
-	        	<mesh filename="package://popi_description/meshes/HJambeARD.STL" />
-	      	</geometry>
-	    </collision>
+    	<collision>
+      		<origin xyz="0 0 -0.15"
+        			rpy="0 0 0" />
+      		<geometry> 
+          		<box size="0.1 0.1 -0.43" />
+      		</geometry>
+    	</collision>
 	</link>
 
   	<link name="BJambeARD">
 	    <inertial>
-	      	<origin xyz="0.11761 0 -0.012387"
-	        		rpy="0 1.5708 0" />
+	      	<origin xyz="-0.012387 0 -0.11761"
+	        		rpy="0 0 0" />
 	      	<mass value="${masse_bjambe}" />
 	      	<inertia 	ixx="0.000103" 	ixy="0.000000" 	ixz="-0.00019" 	
       									iyy="0.006798" 	iyz="0"
@@ -341,12 +341,12 @@
 	      	<material name="white"/>
 	    </visual>
 	    <collision>
-	      	<origin xyz="0 0 0"
-	        		rpy="0 0 0" />
-	      	<geometry> 
-	        	<mesh filename="package://popi_description/meshes/BJambeARD.STL" />
-	      	</geometry>
-	    </collision>
+      		<origin xyz="0 0 -0.08"
+        			rpy="0 0 0" />
+      		<geometry> 
+          		<box size="0.05 0.05 -0.32" />
+      		</geometry>
+    	</collision>
   	</link>	
 
 	<link name="PiedARD">
@@ -367,12 +367,12 @@
 	      	<material name="white"/>
 	    </visual>
 	    <collision>
-	      	<origin xyz="0 0 0"
-	        		rpy="0 0 0" />
-	      	<geometry>
-	        	<mesh filename="package://popi_description/meshes/PiedARD.STL" />
-	      	</geometry>
-	    </collision>
+      		<origin xyz="0 0 0.033"
+        	  		rpy="0 0 0" />
+      		<geometry>
+        		<sphere radius="0.0335" />
+      		</geometry>
+    	</collision>
 	</link>
 
 <!--**************************************************************************************-->
@@ -397,17 +397,17 @@
       		<material name="orange"/>
     	</visual>
     	<collision>
-      		<origin xyz="0 0 0"
+      		<origin xyz="0 -0.075 0"
         			rpy="0 0 0" />
       		<geometry> 
-        		<mesh filename="package://popi_description/meshes/EpauleARG.STL" />
+          		<box size="0.15 0.15 0.12" />
       		</geometry>
     	</collision>
   	</link>
 
 	<link name="HJambeARG">
 	    <inertial>
-	      	<origin xyz="-0.11389 -0.00555 0.00901"
+	      	<origin xyz="0.00901 -0.00555 -0.11389"
 	        		rpy="0 -1.495 0" />
 	      	<mass value="${masse_hjambe}" />
 	      	<inertia 	ixx="0.01032" 	ixy="-0.00226"	ixz="0.01011"
@@ -422,19 +422,19 @@
 	      	</geometry>
 	      	<material name="darkgrey"/>
 	    </visual>
-	    <collision>
-	      	<origin xyz="0 0 0"
-	        		rpy="0 0 0" />
-	     	<geometry>
-	        	<mesh filename="package://popi_description/meshes/HJambeARG.STL" />
-	      	</geometry>
-	    </collision>
+    	<collision>
+      		<origin xyz="0 0 -0.15"
+        			rpy="0 0 0" />
+      		<geometry> 
+          		<box size="0.1 0.1 -0.43" />
+      		</geometry>
+    	</collision>
 	</link>
 
 	<link name="BJambeARG">
 	    <inertial>
-	      	<origin xyz="0.11761 0.0 -0.012387"
-	        		rpy="0 1.5708 0" />
+	      	<origin xyz="-0.012387 0 -0.11761"
+	        		rpy="0 0 0" />
 	      	<mass value="${masse_bjambe}" />
 	      	<inertia ixx="0.000103" 	ixy="0.000000" 	ixz="-0.00019" 	
       									iyy="0.006798" 	iyz="0"
@@ -449,12 +449,12 @@
 	      	<material name="white"/>
 	    </visual>
 	    <collision>
-	      	<origin xyz="0 0 0"
-	        		rpy="0 0 0" />
-	      	<geometry>
-	        	<mesh filename="package://popi_description/meshes/BJambeARG.STL" />
-	      	</geometry>
-	    </collision>
+      		<origin xyz="0 0 -0.08"
+        			rpy="0 0 0" />
+      		<geometry> 
+          		<box size="0.05 0.05 -0.32" />
+      		</geometry>
+    	</collision>
 	</link>
 
 	<link name="PiedARG">
@@ -475,12 +475,12 @@
 	      	<material name="white"/>
 	    </visual>
 	    <collision>
-	      	<origin xyz="0 0 0"
-	        		rpy="0 0 0" />
-	      	<geometry>
-	        	<mesh filename="package://popi_description/meshes/PiedARG.STL" />
-	      	</geometry>
-	    </collision>
+      		<origin xyz="0 0 0.033"
+        	  		rpy="0 0 0" />
+      		<geometry>
+        		<sphere radius="0.0335" />
+      		</geometry>
+    	</collision>
 	</link>
 
 <!--**************************************************************************************-->
@@ -492,7 +492,7 @@
       			rpy="0 0 0" />
     	<parent link="Bati" />
     	<child  link="EpauleAVD" />
-    	<axis   xyz="-1 0 0" />
+    	<axis   xyz="1 0 0" />
     	<limit  lower="${lower_aile}"
       			upper="${upper_aile}"
       			effort="${effort_aile}"
@@ -506,7 +506,7 @@
 	      		rpy="0 0 0" />
 	    <parent link="EpauleAVD" />
 	    <child  link="HJambeAVD" />
-	    <axis   xyz="0 -1 0" />
+	    <axis   xyz="0 1 0" />
 	    <limit  lower="-1.5708"
       			upper="1.5708"
       			effort="${effort_epaule}"
@@ -560,7 +560,7 @@
 	      		rpy="0 0 0" />
 	    <parent link="EpauleAVG" />
 	    <child  link="HJambeAVG" />
-	    <axis   xyz="0 -1 0" />
+	    <axis   xyz="0 1 0" />
 	    <limit  lower="-1.5708"
       			upper="1.5708"
       			effort="${effort_epaule}"
@@ -600,7 +600,7 @@
 	      		rpy="0 0 0" />
 	    <parent link="Bati" />
 	    <child  link="EpauleARD" />
-	    <axis   xyz="-1 0 0" />
+	    <axis   xyz="1 0 0" />
 	    <limit  lower="${lower_aile}"
       			upper="${upper_aile}"
       			effort="${effort_aile}"
@@ -613,7 +613,7 @@
 	      		rpy="0 0 0" />
 	    <parent link="EpauleARD" />
 	    <child  link="HJambeARD" />
-	    <axis   xyz="0 -1 0" />
+	    <axis   xyz="0 1 0" />
 	    <limit  lower="-1.5708"
       			upper="1.5708"
       			effort="${effort_epaule}"
@@ -665,7 +665,7 @@
 	      		rpy="0 0 0" />
 	    <parent link="EpauleARG" />
 	    <child  link="HJambeARG" />
-	    <axis   xyz="0 -1 0" />
+	    <axis   xyz="0 1 0" />
 	    <limit  lower="-1.5708"
       			upper="1.5708"
       			effort="${effort_epaule}"

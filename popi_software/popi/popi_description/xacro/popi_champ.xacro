@@ -193,7 +193,7 @@
 	<link name="HJambeAVG">
 	    <inertial>
 	      	<origin xyz="-0.11389 -0.00555 0.00901"
-	        		rpy="0 -1.5708 0" />
+	        		rpy="0 -1.495 0" />
 	      	<mass value="${masse_hjambe}" />
 	      	<inertia 	ixx="0.01032" 	ixy="-0.00226" 	ixz="0.01011"
 	        							iyy="0.06056" 	iyz="0.00025"
@@ -201,7 +201,7 @@
 	    </inertial>
 	    <visual>
 	     	<origin xyz="0 0 0"
-	        		rpy="0 -1.5708 0" />
+	        		rpy="0 -1.495 0" />
 	      	<geometry>
 	        	<mesh filename="package://popi_description/meshes/HJambeAVG.STL" />
 	      	</geometry>
@@ -408,7 +408,7 @@
 	<link name="HJambeARG">
 	    <inertial>
 	      	<origin xyz="-0.11389 -0.00555 0.00901"
-	        		rpy="0 -1.5708 0" />
+	        		rpy="0 -1.495 0" />
 	      	<mass value="${masse_hjambe}" />
 	      	<inertia 	ixx="0.01032" 	ixy="-0.00226"	ixz="0.01011"
 	        							iyy="0.06056"  	iyz="0.00025"
@@ -416,7 +416,7 @@
 	    </inertial>
 	    <visual> 
 	      	<origin xyz="0 0 0"
-	        		rpy="0 -1.5708 0" />
+	        		rpy="0 -1.495 0" />
 	     	<geometry>
 	        	<mesh filename="package://popi_description/meshes/HJambeARG.STL" />
 	      	</geometry>
@@ -516,7 +516,7 @@
   	</joint>
 
   	<joint name="coudeAVD" type="revolute">
-	    <origin xyz="-0.35192 0 -0.041509"
+	    <origin xyz="0.041509 0 -0.35192"
 	      		rpy="0 0 0" />
 	    <parent link="HJambeAVD" />
 	    <child  link="BJambeAVD" />
@@ -530,7 +530,7 @@
   	</joint>
 
   	<joint name="piedAVD" type="fixed">
-	    <origin xyz="0.29604 0 -0.015"
+	    <origin xyz="-0.015 0 -0.29604"
 	      		rpy="0 0 0" />
 	    <parent link="BJambeAVD" />
 	    <child 	link="PiedAVD" />
@@ -570,7 +570,7 @@
   	</joint>
 
   	<joint name="coudeAVG" type="revolute">
-	    <origin xyz="-0.35192 0 -0.041509"
+	    <origin xyz="0.041509 0 -0.35192"
 	      		rpy="0 0 0" />
 	    <parent link="HJambeAVG" />
 	    <child  link="BJambeAVG" />
@@ -584,7 +584,7 @@
   	</joint>
 
   	<joint name="piedAVG" type="fixed">
-    	<origin xyz="0.29604 0 -0.015"
+    	<origin xyz="-0.015 0 -0.29604"
       			rpy="0 0 0" />
 	    <parent link="BJambeAVG" />
 	    <child 	link="PiedAVG" />
@@ -622,7 +622,7 @@
   				  friction="${friction_epaule}"/>
 	</joint>
 	<joint name="coudeARD" type="revolute">
-	    <origin xyz="-0.35192 0 -0.041509"
+	    <origin xyz="0.041509 0 -0.35192"
 	      		rpy="0 0 0" />
 	    <parent link="HJambeARD" />
 	    <child  link="BJambeARD" />
@@ -636,7 +636,7 @@
 	</joint>
 
 	<joint name="piedARD" type="fixed">
-	    <origin xyz="0.29604 0 -0.015"
+	    <origin xyz="-0.015 0 -0.29604"
 	      		rpy="0 0 0" />
 	    <parent link="BJambeARD" />
 	    <child 	link="PiedARD" />
@@ -674,7 +674,7 @@
   				  friction="${friction_epaule}"/>
   	</joint>
 	<joint name="coudeARG" type="revolute">
-		<origin xyz="-0.35192 0 -0.041509"
+		<origin xyz="0.041509 0 -0.35192"
 		  		rpy="0 0 0" />
 		<parent link="HJambeARG" />
 		<child  link="BJambeARG" />
@@ -688,7 +688,7 @@
 	</joint>
 
 	<joint name="piedARG" type="fixed">
-	    <origin xyz="0.29604 0 -0.015"
+	    <origin xyz="-0.015 0 -0.29604"
 	      		rpy="0 0 0" />
 	    <parent link="BJambeARG" />
 	    <child 	link="PiedARG" />
